@@ -1,0 +1,29 @@
+.investment {
+    &__list {
+        flex-wrap: wrap;
+        gap: 50px;
+        @media (min-width: 700px) {
+            gap: 70px;
+        }
+        @media (min-width: 1024px) {
+            gap: 120px;
+        }
+    }
+
+    &__item {
+        padding: 20px 0;
+        @media (min-width: 500px) {
+            padding: 40px 0;
+            
+        }
+    }
+
+    &__link {
+        color: $main-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
